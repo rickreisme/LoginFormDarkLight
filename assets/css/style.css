@@ -11,7 +11,11 @@
     --c-purple100: #a855f7;
     --c-purple200: #bf46ef;
 
-    --c-gradient: linear-gradient(90deg, var(--c-purple50), var(--c-purple100), var(--c-purple200));
+    --c-green1: #076907;
+    --c-green2: #199019;
+    --c-green3: #0FD90F;
+
+    --c-gradient: linear-gradient(90deg, var(--c-green1), var(--c-green2), var(--c-green3));
 }
 
 *{
@@ -56,7 +60,7 @@
     position: absolute;
     content: '';
     width: 40%;
-    background-color: var(--c-purple50);
+    background-color: var(--c-green2);
     height: 2px;
     bottom: 12px;
 }
@@ -90,7 +94,7 @@
 
 .input-box label{
     font-size: 14px;
-    color: var(--c-dark50);
+    color: var(--c-dark100);
 }
 
 .input-field{
@@ -99,7 +103,7 @@
     gap: 15px;
     padding: 3px;
     cursor: text;
-    border-bottom: 1px solid var(--c-purple50);
+    border-bottom: 2px solid var(--c-green3);
 }
 
 .input-field i{
@@ -121,10 +125,7 @@
 
 #frgt_pswd a{
     text-decoration: none;
-}
-
-#frgt_pswd a:hover{
-    color: var(--c-purple50);
+    color: var(--c-dark100);
 }
 
 #login_btn{
@@ -148,12 +149,13 @@
     animation: lt-dk 0.3s ease;
 }
 
-.dark#login_form .input-field input, .dark#login_form .input-field i{
+.dark#login_form .input-field input, .dark#login_form .input-field i,
+.dark#login_form .input-box label{
     color: var(--c-light50);
 }
 
 .dark#login_form #frgt_pswd a{
-    color: var(--c-purple50);
+    color: var(--c-green2);
 }
 
 .dark#login_form #frgt_pswd a:hover{
