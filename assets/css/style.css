@@ -26,10 +26,13 @@
     box-sizing: border-box;
 }
 
+body{
+    background: var(--c-gradient);
+}
+
 #container{
     height: 100vh;
     width: 100%;
-    background: var(--c-gradient);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -165,6 +168,26 @@
 
 #login_btn:hover{
     transform: scale(1.1);
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+footer h3{
+    font-size: 14.5px;
+    text-align: center;
+    color: white;
+}
+
+footer span{
+    color: var(--c-green0);
+    font-weight: bold;
+    font-size: 15px;
 }
 
 .dark#login_form{
