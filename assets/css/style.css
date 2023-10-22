@@ -11,6 +11,7 @@
     --c-purple100: #a855f7;
     --c-purple200: #bf46ef;
 
+    --c-green0: #042704;
     --c-green1: #076907;
     --c-green2: #199019;
     --c-green3: #0FD90F;
@@ -59,9 +60,9 @@
 #form_header h1::before{
     position: absolute;
     content: '';
-    width: 40%;
+    width: 20%;
     background-color: var(--c-green2);
-    height: 2px;
+    height: 3px;
     bottom: 12px;
 }
 
@@ -75,13 +76,25 @@
     justify-content: space-around;
 }
 
-#social_media img{
-    width: 35px;
+#social_media i{
+    font-size: 35px;
     transition: transform 0.5s ease;
 }
 
-#social_media img:hover{
+#social_media i:hover{
     transform: scale(1.2); /*aumentar o tamanho das imagens no hover sem mexer nos outros componentes*/
+}
+
+#google-icon{
+    color: var(--c-green1);
+}
+
+#face-icon{
+    color: #355390;
+}
+
+#git-icon{
+    color: black;
 }
 
 #input{
@@ -93,8 +106,8 @@
 }
 
 .input-box label{
-    font-size: 14px;
-    color: var(--c-dark100);
+    font-size: 15px;
+    color: black;
 }
 
 .input-field{
@@ -126,12 +139,23 @@
 #frgt_pswd a{
     text-decoration: none;
     color: var(--c-dark100);
+    font-size: 14.5px;
+    font-weight: 500;
+}
+
+#frgt_pswd{
+    margin-top: -30px;
+}
+
+#frgt_pswd a:hover{
+    color: var(--c-green2);
 }
 
 #login_btn{
     border: none;
     background: var(--c-gradient);
     color: var(--c-light50);
+    font-size: 15px;
     padding: 7px;
     border-radius: 5px;
     cursor: pointer;
@@ -145,7 +169,7 @@
 
 .dark#login_form{
     color: var(--c-light50);
-    background-color: var(--c-dark100);
+    background-color: var(--c-green0);
     animation: lt-dk 0.3s ease;
 }
 
@@ -164,7 +188,7 @@
 
 @keyframes dk-lt {
     0%{
-        background-color: var(--c-dark100);
+        background-color: var(--c-green0);
     }
 
     100%{
